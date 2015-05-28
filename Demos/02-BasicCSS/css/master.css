@@ -1,0 +1,14 @@
+
+html,
+body {
+		color: red;
+		font-size: 20px;
+		background: blue;
+}
+h1 {
+	color: yellow;
+	font-size: 60px;
+}
+.intro {
+	font-size: 30px;
+}
