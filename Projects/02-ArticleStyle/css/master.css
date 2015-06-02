@@ -9,26 +9,40 @@ body {
 	margin: 0 auto;
 }
 
-h1 {font-family: "open sans";
-	font-weight: 800;
+h1, h2, h3 {
+	font-family: "open sans";
+	font-weight: 800
+}
+
+h1 {
 	text-align: center;
 	font-size: 60px;
 }
 
-h2 {font-family: "open sans";
-	font-weight: 800;
+h2 {
 	text-align: left;
 	font-size: 36px;
 }
 
-h3 {font-family: "open sans";
-	font-weight: 800;
+h3 {
 	text-align: left;
 	font-size: 28px;
-
 }
 
-.right {float: right;
+h4 {
+	font-family: "Georgia" serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #999;
+	text-align: center;
+}
+
+.right {
+	float: right;
+}
+
+.center{
+	margin: 0 auto;
 }
 
 .intro {
@@ -40,21 +54,13 @@ h3 {font-family: "open sans";
 	color: #666;
 }
 
-.sub_title {
-	text-align: center;
-	color: #999;
-}
-
 .photo {
 	border: 2px solid #ccc;
 	width: 974px;
-	padding: 0;
-	margin: 0 auto;
 }
 
 .photo_caption {
-	width: 800px;
-	margin: 0 auto;
+	width: 700px;
 	font-family: "open sans";
 	font-size: 14px;
 	color: #666;
