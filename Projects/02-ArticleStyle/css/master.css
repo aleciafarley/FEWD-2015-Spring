@@ -5,8 +5,6 @@ body {
 	font-family: Georgia, serif;
 	font-size: 20px;
 	color: #222;
-	width: 800px;
-	margin: 0 auto;
 }
 
 h1, h2, h3 {
@@ -37,20 +35,43 @@ h4 {
 	text-align: center;
 }
 
+p {
+	line-height: 30px;
+}
+
+.container_wide {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.container_thin {
+	width: 750px;
+	margin: 0 auto;
+}
+
 .right {
 	float: right;
 }
 
 .center{
-	margin: 0 auto;
+	text-align: center;
 }
 
-.intro {
+.lefttext {
+	text-align: left;
+}
+
+.main {
 	font-size: 16px;
 }
 
 .sub-bullets-1 {
 	font-size: 16px;
+	color: #666;
+}
+
+.sub-bullets-2 {
+	font-size: 14px;
 	color: #666;
 }
 
@@ -60,7 +81,6 @@ h4 {
 }
 
 .photo_caption {
-	width: 700px;
 	font-family: "open sans";
 	font-size: 14px;
 	color: #666;
@@ -82,13 +102,11 @@ h4 {
 }
 
 .table-of-contents {
-	width: 800px;
-	margin: 0 auto;
 	border: #ccc solid;
 	border-width: 2px 0px 2px 0px;
-	padding: 50px;
-	margin-top: 50px;
-
+	padding: 70px;
+	margin-top: 70px;
+	margin-bottom: 70px;
 }
 
 .TOC_Title {
@@ -105,9 +123,7 @@ h4 {
 	background: #f6f6f6;
 	font-size: 20px;
 	color: #222;
-
-
-	
-
-
+	margin-top: 50px;
+	margin-bottom: 50px;
+	line-height: 40px;
 }
