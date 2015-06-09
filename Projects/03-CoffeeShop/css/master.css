@@ -12,3 +12,102 @@ html,
 	h6 {
 		font-family: "Sanchez", Georgia, serif;
 	}
+
+	h1 {
+		text-align: center;
+		font-size: 60px;
+		color: #fff;
+	}
+	
+	h2 {
+		text-align: center;
+		font-size: 32px;
+	}
+	
+	h3 {
+		text-align: left;
+		font-size: 26px;
+	}
+
+	.logo {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+	}
+
+	.intro {
+		text-align: center;
+		max-width: 600px;
+		margin: 0 auto;
+		color: #fff;
+	}
+
+	.intro_image {
+		background-color: #222;
+		background-image: url("file:///Users/aleciafarley/Documents/fewd/Projects/03-CoffeeShop/images/header.jpg");
+		height: 550px;
+		vertical-align: 
+	}
+
+	header {
+		background-image: url("images/header.jpg");
+	}
+
+	.menu_back{
+		background-color: #AC8420;
+		padding: 60px;
+	}
+
+	.table_menu {
+		margin: 0 auto;
+		border-collapse: collapse;
+		table-layout: fixed;
+		width: 700px;
+	}
+	td {
+		border-bottom: 2px solid #9B761C;
+		padding: 10px 15px;
+	}
+
+
+	.hours {
+		font-size: 16px;
+		color: #666;
+	}
+
+	.get {
+		font-size: 16px;
+		color: #AC8420;
+		border-bottom: 2px;
+
+	}
+
+
+
+	.foot_back {
+		background-color: #222;
+	}
+
+	.foot_font {
+		font-size: 12px;
+		color: #fff;
+	}
+
+	.foot_left {
+		text-align: left;
+		vertical-align: middle;
+	}
+
+	.foot_rigth {
+		text-align: right;
+	}
+
+
+
+
+
+
+
+
+
+
