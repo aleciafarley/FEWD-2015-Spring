@@ -29,10 +29,78 @@ html,
 		font-size: 26px;
 	}
 
-	.logo {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
+	img {
+		padding: 40px;
+	}
+
+	header {
+		background-image: url("images/header.jpg");
+	}
+
+	li {
+		padding: 20px;
+		border-bottom: solid 2px #9B761C;
+	}
+
+	.box {
+		display: inline-block;
+	}
+
+	.center {
+		margin: 0 auto;
+	}
+
+	.last {
+		border-bottom: none;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+
+
+	.container_thin {
+		width: 400px;
+	}
+
+	.foot_back {
+		background-color: #222;
+	}
+
+	.foot_font {
+		font-size: 12px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	.directions {
+		width: 900px;
+	}
+
+	.get {
+		font-size: 16px;
+		color: #AC8420;
+		border-style:solid;
+		border-width: 2px;
+		border-color: #AC8420;
+		padding: 10px;
+		width: 120px;
+		text-align: center;
+
+	}
+
+	.hours {
+		font-size: 16px;
+		color: #666;
+	}
+
+	.info {
+		padding: 40px;
+		letter-spacing: 2px;
 	}
 
 	.intro {
@@ -44,64 +112,52 @@ html,
 
 	.intro_image {
 		background-color: #222;
-		background-image: url("file:///Users/aleciafarley/Documents/fewd/Projects/03-CoffeeShop/images/header.jpg");
-		height: 550px;
-		vertical-align: 
+		background-image: url("../images/header.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		padding: 80px;
 	}
 
-	header {
-		background-image: url("images/header.jpg");
+
+	.logo {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 	}
+
+
+	.menu_box {
+		width: 850px;
+	}
+
+
 
 	.menu_back{
 		background-color: #AC8420;
 		padding: 60px;
 	}
 
+	.price {
+		color: #DECC9C;
+	}
+
 	.table_menu {
-		margin: 0 auto;
-		border-collapse: collapse;
-		table-layout: fixed;
-		width: 700px;
-	}
-	td {
-		border-bottom: 2px solid #9B761C;
-		padding: 10px 15px;
-	}
-
-
-	.hours {
-		font-size: 16px;
-		color: #666;
-	}
-
-	.get {
-		font-size: 16px;
-		color: #AC8420;
-		border-bottom: 2px;
-
-	}
-
-
-
-	.foot_back {
-		background-color: #222;
-	}
-
-	.foot_font {
-		font-size: 12px;
+		list-style: none;
 		color: #fff;
+		width: 300px;
 	}
+	
 
-	.foot_left {
-		text-align: left;
-		vertical-align: middle;
-	}
+	
 
-	.foot_rigth {
-		text-align: right;
-	}
+	
 
+
+
+
+	
+
+	
 
 
 
