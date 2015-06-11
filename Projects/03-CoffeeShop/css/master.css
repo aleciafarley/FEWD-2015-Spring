@@ -30,7 +30,12 @@ html,
 	}
 
 	img {
-		padding: 30px;
+		padding: 0px;
+	}
+
+	.img_block {
+		display: inline-block;
+		width:40%;
 	}
 
 	header {
@@ -43,8 +48,17 @@ html,
 		border-bottom: solid 2px #9B761C;
 	}
 
+	footer {
+		padding: 75px;
+	}
+
+
 	.box {
 		display: inline-block;
+	}
+
+	.box2 {
+		display: block;
 	}
 
 	.center {
@@ -76,6 +90,8 @@ html,
 	/* Background for footer*/
 	.foot_back {
 		background-color: #222;
+		clear: both;
+		overflow: hidden;
 	}
 
 	/* This is for the text in the footer*/
@@ -83,12 +99,16 @@ html,
 		font-size: 12px;
 		color: #fff;
 		text-transform: uppercase;
-		padding: 50px;
+		width: 40%;
+		margin: 15px 0 0;
 	}
 
 	/* This is the width of the third section of the page - Hours */
 	.container_C {
 		width: 900px;
+		clear: both;
+		overflow: hidden;
+		padding: 50px 0;
 	}
 
 	/* This is the Get Directions box*/
@@ -111,7 +131,7 @@ html,
 	}
 
 	.info {
-		padding: 40px;
+		padding: 0px;
 	}
 
 	/* This is to style the intro copy in the header */
@@ -165,8 +185,13 @@ html,
 			color: #DECC9C;
 		}
 	
-
+	.foot_text_left { 
+		text-align: left;
+	}
 	
+	.foot_text_right {
+		text-align: right;
+	}
 
 
 
