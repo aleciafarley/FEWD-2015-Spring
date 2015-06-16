@@ -3,90 +3,122 @@
 	<head>
 		<title>Grinder's Coffe Shop</title>
 		<link href='http://fonts.googleapis.com/css?family=Lato|Sanchez' rel='stylesheet' type='text/css'>
-		<link href="css/master.css" rel="stylesheet">
-	</head>
-	<body>
-
-		<header class="intro_image">
-
-				<img class="logo" src="images/logo_large.png" alt="">
-
-				<h1>Grinders Coffee Co.</h1>
-
-				<p class="intro">Grinders is where people gather to experience the true spirit of generosity. This is not a term we use lightly, and it's what keeps our customers coming back for more.</p>
-		</header>
-
-		<section class="menu_back">
-			<h2>Coffee Bar</h2>
-			<div class="container_B center">
-				<div class="container_thin box">
-					<ul class="menu_items">
-						<li> Pour-Over Coffee <span class="price right">3.5</span></li>
-						<li class="last"> Cold Brew Iced Coffee <span class="price right">3.5</span></li>
-					</ul>
-				</div>
-				<div class="container_thin box">
-					<ul class="menu_items">	
-						<li>French Press to share<span class="price right">7</span></li>
-						<li class="last">Chemex to share<span class="price right">7</span></li>
-					</ul>
-				</div>
-			</div>	
 		
-			<h2>Espresso Bar</h2>
-			<div class="container_B center">
-				<div class="container_thin box">
-					<ul class="menu_items">
-						<li>Expresso<span class="price right">2.5</span></li>
-						<li>Cappuccino<span class="price right">3.75</span></li>
-						<li>Latte<span class="price right">4</span></li>
-						<li>Mocha<span class="price right">4.5</span></li>
-						<li class="last">Macchiato<span class="price right">3</span></li>
-					</ul>
-				</div>
-				<div class="container_thin box">
-					<ul class="menu_items">
-						<li>Americano<span class="price right">3.5</span></li>
-						<li>Maple Macciato<span class="price right">3.5</span></li>
-						<li>Honey Macchiato<span class="price right">5</span></li>
-						<li>Cajita Latte<span class="price right">5</span></li>
-						<li class="last">Chai<span class="price right">4</span></li>
-					</ul>
-				</div>
-			</div>
-		</section>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/grid.css" rel="stylesheet">
+		<link href="css/master.css" rel="stylesheet">
 
-		<section class="center container_C">
-			<div class="container_thin box2 left info">
-				<h3>Hours &amp Location</h3>
-				<div class="hours">
-					<p>Open 7am - 5pm, 7 days a Week</p>
-					<p>410-509-8010</p>
-					<p class="address">Grinders Coffee Co.<br>
-					4511 W 31st St.<br>
-					Baltimore, MD 21232</p>
+
+	</head>
+	<body class="fs-grid">
+		
+			<header class="intro_image">
+
+				<div class="fs-row">
+					<div class="fs-cell">
+			
+						<img class="logo" src="images/logo_large.png" alt="">
+
+						<h1>Grinders Coffee Co.</h1>
+
+						<p class="intro">Grinders is where people gather to experience the true spirit of generosity. This is not a term we use lightly, and it's what keeps our customers coming back for more.</p>
+					</div>
 				</div>
+			</header>
+		
+
+			<section class="menu_back">
 				
-				<p class="get">Get Directions</p>
-				
-			</div>
+				<div class="fs-row">
 
-			<div class="container_thin box2 right">
-				<img src="images/location.jpg">
-			</div>
+						<div class="fs-cell-centered fs-md-6 fs-lg-8">
+							<h2>Coffee Bar</h2>
 
-		</section>
-		<footer class="foot_back">
-			<div class="box foot_font left foot_text_left">
-				<p>&#169 2015 Grinders Coffee Co.</p>
-			</div>
+							<div class="box">
+								<ul class="menu_items">
+									<li> Pour-Over Coffee <span class="price right">3.5</span></li>
+									<li class="last"> Cold Brew Iced Coffee <span class="price right">3.5</span></li>
+								</ul>
+							</div>
+							<div class="container_thin box">
+								<ul class="menu_items">	
+									<li>French Press to share<span class="price right">7</span></li>
+									<li class="last">Chemex to share<span class="price right">7</span></li>
+								</ul>
+							</div>
+						</div>	
+			
+						<div class="fs-cell-centered fs-md-6 fs-lg-8">
+							<h2>Espresso Bar</h2>
+						
+							<div class="box">
+								<ul class="menu_items">
+									<li>Expresso<span class="price right">2.5</span></li>
+									<li>Cappuccino<span class="price right">3.75</span></li>
+									<li>Latte<span class="price right">4</span></li>
+									<li>Mocha<span class="price right">4.5</span></li>
+									<li class="last">Macchiato<span class="price right">3</span></li>
+								</ul>
+							</div>
+							<div class="container_thin box">
+								<ul class="menu_items">
+									<li>Americano<span class="price right">3.5</span></li>
+									<li>Maple Macciato<span class="price right">3.5</span></li>
+									<li>Honey Macchiato<span class="price right">5</span></li>
+									<li>Cajita Latte<span class="price right">5</span></li>
+									<li class="last">Chai<span class="price right">4</span></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</section>
 
-			<div class="box foot_font right foot_text_right">
-				<p>Twitter &nbsp &middot; &nbsp Facebook &nbsp &middot; &nbsp Instagram<p>
-			</div>
 
-			<img class="logo img_box left" src="images/logo_small.png" alt="">
+			<section class="center container_C">
+				<div class="fs-row">
+					<div="fs-cell fs-md-6 fs-lg-8 fs-xl-12">
+						<div class="container_thin box2 left info">
+							<h3>Hours &amp Location</h3>
+							<div class="hours">
+								<p>Open 7am - 5pm, 7 days a Week</p>
+								<p>410-509-8010</p>
+								<p class="address">Grinders Coffee Co.<br>
+								4511 W 31st St.<br>
+								Baltimore, MD 21232</p>
+							</div>
+							<p class="get">Get Directions</p>
+						</div>	
+					
+						<div class="container_thin box2 right">
+							<img src="images/location.jpg">
+						</div>
+					</div>
+				</div>
+			</section>
 
-		</footer>
+
+			<footer class="foot_back">
+				<div class="fs-row">
+					<div class="fs-cell-centered fs-md-6 fs-lg-8">
+						<div class="box foot_font left foot_text_left">
+							<p>&#169 2015 Grinders Coffee Co.</p>
+						</div>
+					</div>
+					<div class="fs-cell-centered fs-md-6 fs-lg-8">
+						<div class="box foot_font right foot_text_right">
+							<p>Twitter &nbsp &middot; &nbsp Facebook &nbsp &middot; &nbsp Instagram<p>
+						</div>
+					</div>
+					<div>
+						<img class="logo img_box left" src="images/logo_small.png" alt="">
+					</div>
+				</div>
+
+			</footer>
+
+<script>
+(function(){if(typeof FSGridBookmarklet==='undefined'){document.body.appendChild(document.createElement('script')).src='http://beta.formstone.it/js/bookmarklet/grid.js';}else{FSGridBookmarklet();}})();
+</script>
+
 	</body>
 </html>

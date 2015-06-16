@@ -84,7 +84,8 @@ html,
 
 	/* This is for menu lists, hours and locations section and the image*/
 	.container_thin {
-		width: 400px;
+		width: 33%;
+		margin: 0 15px;
 	}
 
 	/* Background for footer*/
@@ -168,7 +169,7 @@ html,
 	/* This is the background for the second section - the menu*/
 	.menu_back{
 		background-color: #AC8420;
-		padding: 60px;
+		padding: 60px 0;
 	}
 
 	/* Styling of hte menu items*/
