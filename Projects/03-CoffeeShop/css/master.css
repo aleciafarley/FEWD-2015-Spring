@@ -33,6 +33,10 @@ html,
 		padding: 0px;
 	}
 
+	.responsive_image {
+		width: 100%;
+	}
+
 	.img_block {
 		display: inline-block;
 		width:40%;
@@ -43,9 +47,18 @@ html,
 		background-image: url("images/header.jpg");
 	}
 
-	li {
+	.list_One {
 		padding: 20px;
 		border-bottom: solid 2px #9B761C;
+	}
+
+	.list_Two {
+		font-size: 12px;
+		color: #fff;
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 0 10px;
+
 	}
 
 	footer {
@@ -54,11 +67,17 @@ html,
 
 
 	.box {
-		display: inline-block;
+		display: block;
 	}
 
 	.box2 {
 		display: block;
+		padding: 20px;
+		max-width: 100%;
+	}
+
+	.bullet {
+		list-style-type: disc #fff;
 	}
 
 	.center {
@@ -85,7 +104,6 @@ html,
 	/* This is for menu lists, hours and locations section and the image*/
 	.container_thin {
 		width: 33%;
-		margin: 0 15px;
 	}
 
 	/* Background for footer*/
@@ -101,7 +119,7 @@ html,
 		color: #fff;
 		text-transform: uppercase;
 		width: 40%;
-		margin: 15px 0 0;
+		
 	}
 
 	/* This is the width of the third section of the page - Hours */
@@ -146,18 +164,34 @@ html,
 
 	/* This is the header image section */
 	.intro_image {
-		background-color: #222;
+		background: #222 center no-repeat;
 		background-image: url("../images/header.jpg");
-		background-repeat: no-repeat;
-		background-size: 100% auto;
-		padding: 70px;
+		background-size: cover;
+		padding: 75px 0;
+		text-align: center;
 	}
+
+
 
 	/* This is to center the logo when used */
 	.logo {
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
+	}
+
+	.logoB1 {
+		color: #fff;
+
+	}
+
+	.logoB1::before {
+		background: url("../images/logo_large.png");
+		content: '';
+		height: 100px;
+		width: 100px;
+		display: block;
+		margin: 0 auto;
 	}
 
 	/* This is the width fo the second section */
@@ -172,11 +206,16 @@ html,
 		padding: 60px 0;
 	}
 
+	/* This is the background for the third section - the location*/
+	.location_back{
+		background-color: #fff;
+	}
+
 	/* Styling of hte menu items*/
 	.menu_items {
 		list-style: none;
 		color: #fff;
-		width: 300px;
+		
 		font-size: 16px;
 
 	}
@@ -194,7 +233,11 @@ html,
 		text-align: right;
 	}
 
+.social {
+	color: #fff;
+	display: inline-block;
 
+}
 
 
 	
