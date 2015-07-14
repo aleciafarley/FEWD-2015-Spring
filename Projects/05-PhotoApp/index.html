@@ -2,8 +2,114 @@
 <html>
 	<head>
 
+	<meta charset="UTF-8">
+
+	<!--this tells the file to use the actual width of the browser-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>PicticiousPro</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Condensed:300italic,400italic,400,700' rel='stylesheet' type='text/css'>
+
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/grid.css" rel="stylesheet">
+	<link href="css/master.css" rel="stylesheet">
+
 	</head>
-	<body>
+	<body class="fs-grid">
+		<header >
+			<div class="fs-row">
+				<div class="fs-cell logo">
+					<p><strong>Picticious</strong>Pro</p>
+				</div>
+			</div>	
+		</header>
+
+		<section class="hero">
+			<div class="fs-row">
+				<div class="fs-cell fs-sm-3 fs-md-4 fs-lg-6 fs-xl-6">
+					<h1>Nice Shot</h1>
+					<p class="heroText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+					<button type="button" class="download">Download Now</button>
+				</div>
+				<div class="fs-cell fs-md-2 fs-lg-6 fs-xl-6">
+					<img src="images/intro_phone.png" alt="Phone">
+				</div>
+			</div>
+		</section>
+
+		<section class="fs-row">
+			<article class="options fs-cell fs-sm-3 fs-md-2 fs-lg-4 fs-xl-4">
+				<h4>Tag It All</h4>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit aliquet felis, quis.
+			</article>
+
+			<article class="options fs-cell fs-sm-3 fs-md-2 fs-lg-4 fs-xl-4">
+				<h4>Cloud Sync</h4>
+				Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+			</article>
+
+			<article class="options fs-cell fs-sm-3 fs-md-2 fs-lg-4 fs-xl-4">
+				<h4>Photo Map</h4>
+				Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Ligula porta felis.
+			</article>
+		</section>
+
+		<section class="colorstrip">
+			<div class="fs-row">
+				<div class="fs-cell fs-sm-3 fs-md-4 fs-lg-4 fs-xl-4">
+					<h3>Capture Life</h3>
+					<p>
+					Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+					</p>
+				</div>
+				<div class="fs-cell fs-sm-3 fs-md-4 fs-lg-8 fs-xl-8">
+					<img class="photos" src="images/photos/thumb_01.jpg" alt="one" style="width:150px;height:150px;">	
+					<img class="photos" src="images/photos/thumb_02.jpg" alt="two" style="width:150px;height:150px;">
+					<img class="photos" src="images/photos/thumb_03.jpg" alt="three" style="width:150px;height:150px;">
+					<img class="photos" src="images/photos/thumb_04.jpg" alt="four" style="width:150px;height:150px;">
+					<img class="photos" src="images/photos/thumb_05.jpg" alt="five" style="width:150px;height:150px;">
+					<img class="photos" src="images/photos/thumb_06.jpg" alt="six" style="width:150px;height:150px;">
+					<img class="photos" src="images/photos/thumb_07.jpg" alt="seven" style="width:150px;height:150px;">
+					<img class="photos" src="images/photos/thumb_08.jpg" alt="eight" style="width:150px;height:150px;">
+				</div>
+			</div>
+		</section>
+
+		<section class="downloadstrip">
+			<div class="fs-row">
+				<div class="fs-cell-centered fs-sm-3 fs-md-4 fs-lg-8 fs-xl-8">
+					<h2>Download Now</h2>
+					<p>Nullam id dolor id nibh ultricies vehicula deposit quid pro quo hic escorol.</p>
+					<button type="button">icon</button>
+					<button type="button">icon</button>
+					<button type="button">icon</button>
+				</div>
+			</div>
+		</section>
+
+		<hr class="fs-cell fs-sm-3 fs-md-6 fs-lg-12 fs-xl-12">
+
+		<footer class="footerstrip disclosureText">
+			<div class="fs-row">
+				<div class="fs-cell">
+					<p>Support</p>
+					<p>Privacy &amp; Terms</>
+				</div>
+				<div>
+					<p class="copyText">&copy; 2014 PicticiousPro</p>
+				</div>
+				<div>
+					<!--social icons go here-->
+				</div>
+			</div>
+		</footer>
+
+<script>
+(function(){if(typeof FSGridBookmarklet==='undefined'){document.body.appendChild(document.createElement('script')).src='https://formstone.it/js/bookmarklet/grid.js';}else{FSGridBookmarklet();}})();
+</script>
 
 	</body>
+
 </html>
