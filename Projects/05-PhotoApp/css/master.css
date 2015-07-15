@@ -31,12 +31,32 @@
 		text-transform: uppercase;
 	}
 
-/*sprites*/
+	.left {
+		float: left;
+		padding: 10px;
+	}
+
+	.right {
+		float: right;
+		padding: 0px 10px;
+	}
+
+/*sprites
 	.icon-logo, .icon-facebook, .icon-twitter, .icon-google, 
-	.icon-tagSmall, .icon-tagBig, .icon-cloudSmall, .icon-mapSmall,
-	.icon-mapBig, .icon-appStore, .icon-googlePlay, .icon-amazon {
+	.icon-tagSmall, .icon-tagBig, .icon-cloudSmall,  .icon-cloudBig, .icon-mapSmall,
+	.icon-mapBig, .icon-apple, .icon-google, .icon-amazon {
 		background-image: url('images/icon_sprite.png');
 		background-repeat: no-repeat;
+
+	}*/
+
+	.icon-logo:before{
+		background: url('../images/icon_sprite.png');
+		content: '';
+		display: inline-block;
+		height: 65px;
+		width:65px;
+		vertical-align: middle;
 	}
 
 /*logo text*/
@@ -78,20 +98,47 @@
 		line-height: 150%;
 	}
 
+	.options h4:before {
+		background: url('../images/icon_sprite.png');
+		content: '';
+		display: block;	
+	}
+
+	.icon-tagBig h4:before {
+		background-position: 0 -120px;
+		height: 70px; 
+		width:70px;
+		margin: 0 auto 20px;
+	}
+
+	.icon-cloudBig h4:before {
+		background-position: -80px -120px;
+		height: 70px; 
+		width:74px;
+		margin: 0 auto 20px;
+	}
+
+	.icon-mapBig h4:before {
+		background-position: -160px -120px;
+		height: 70px; 
+		width:50px;
+		margin: 0 auto 20px;
+	}
+
+
+
 
 /* This is the gray color strip */
-	.colorstrip {
+	.gallerystrip {
 		background: #eee center no-repeat;
 		background-size: cover;
 		padding: 75px 0;
 	
 	}
 
-/* This is the download now section color strip */
-	.downloadstrip {
-		height: 300px;
-		text-align: center;
-	}
+.gallery {
+	
+}
 
 .photos {
 	padding: 5px;
@@ -103,8 +150,8 @@ hr {
 }
 
 /* This is the footer*/
-	.footerstrip {
-		height: 100px;
+	.footerStrip {
+		height: 200px;
 	}
 
 /* text in footer*/
@@ -117,6 +164,72 @@ hr {
 .copyText {
 	color: #777
 }
+
+/* This is the download now section color strip */
+	.downloadStrip {
+		height: 300px;
+		text-align: center;
+	}
+
+.download_button {
+	background: black url(../images/icon_sprite.png) no-repeat;
+	display: inline-block;
+	height: 60px;
+	width: 200px;
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+	border-radius: 5px;
+
+}
+
+.icon-apple {
+	background-position: center -200px;
+}
+
+.icon-google {
+	background-position: center -260px;
+}
+
+.icon-amazon {
+	background-position: center -320px;	
+}
+
+.social_button {
+	background: black url(../images/icon_sprite.png) no-repeat;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+	border-radius: 5px;
+}
+
+.icon-facebook {
+	background-position: -80px 0; 
+}
+
+.icon-twitter {
+	background-position: -120px 0;
+}
+
+.icon-googleplus {
+	background-position: -160px 0;
+}
+
+
+
+
+.intro-phone:before {
+
+}
+
+
+
+
+
+
 
 
 
