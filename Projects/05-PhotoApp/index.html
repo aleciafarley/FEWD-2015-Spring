@@ -17,8 +17,9 @@
 	<link href="css/master.css" rel="stylesheet">
 
 	</head>
+
 	<body class="fs-grid">
-		<header >
+		<header class="bar headerstrip">
 			<div class="fs-row">
 				<div class="fs-cell logo">
 					<p class="icon-logo"><strong>Picticious</strong>Pro</p>
@@ -26,20 +27,20 @@
 			</div>	
 		</header>
 
-		<section class="hero">
+		<section class="bar herostrip sm_phone_hide">
 			<div class="fs-row">
 				<div class="fs-cell fs-sm-3 fs-md-4 fs-lg-6 fs-xl-6">
 					<h1>Nice Shot</h1>
 					<p class="heroText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-					<button type="button" class="download">Download Now</button>
+					<button type="button" class="hero_button">Download Now</button>
 				</div>
 				<div class="fs-cell fs-md-2 fs-lg-6 fs-xl-6">
-					<img src="images/intro_phone.png" alt="Phone">
+					<img class="phone" src="images/intro_phone.png" alt="Phone">
 				</div>
 			</div>
 		</section>
 
-		<section class="fs-row">
+		<section class="bar fs-row">
 			<article class="options icon-tagBig fs-cell fs-sm-3 fs-md-2 fs-lg-4 fs-xl-4">
 				<h4>Tag It All</h4>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit aliquet felis, quis.
@@ -56,91 +57,77 @@
 			</article>
 		</section>
 
-		<section class="gallerystrip">
+		<section class="bar gallerystrip">
 			<div class="fs-row">
 				<div class="fs-cell fs-sm-3 fs-md-4 fs-lg-4 fs-xl-4">
 					<h3>Capture Life</h3>
-					<p>
-					Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+					<p class="galleryText">Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
 					</p>
 				</div>
-				<div class="fs-cell">
-
+			 	
+				<div class="fs-cell fs-xs-half fs-sm-third fs-md-1 fs-lg-2 fs-xl-2 gallery_md_top">
+					<a href="images/photos/01.jpg">
+					<img class="photos" src="images/photos/thumb_01.jpg" alt="sunset"></a>
 				</div>
-				<div class="gallery">
-					<div class="fs-cell fs-sm-3 fs-md-3 fs-lg-3 fs-xl-3">
-						<img class="photos" src="images/photos/thumb_01.jpg" alt="one" style="width:150px;height:150px;">
-					</div>
-					<div class="fs-cell fs-sm-3 fs-md-3 fs-lg-3 fs-xl-3">
-						<img class="photos" src="images/photos/thumb_01.jpg" alt="one" style="width:150px;height:150px;">
-					</div>
-					<div class="fs-cell fs-sm-3 fs-md-3 fs-lg-3 fs-xl-3">
-						<img class="photos" src="images/photos/thumb_01.jpg" alt="one" style="width:150px;height:150px;">
-					</div>
-					<div class="fs-cell fs-sm-3 fs-md-3 fs-lg-3 fs-xl-3">
-						<img class="photos" src="images/photos/thumb_01.jpg" alt="one" style="width:150px;height:150px;">
-					</div>
-					<div class="fs-cell fs-sm-3 fs-md-3 fs-lg-3 fs-xl-3">
-						<img class="photos" src="images/photos/thumb_01.jpg" alt="one" style="width:150px;height:150px;">
-					</div>
-					<div class="fs-cell fs-sm-3 fs-md-3 fs-lg-3 fs-xl-3">
-						<img class="photos" src="images/photos/thumb_01.jpg" alt="one" style="width:150px;height:150px;">
-					</div>
-					<div class="fs-cell fs-sm-3 fs-md-3 fs-lg-3 fs-xl-3">
-						<img class="photos" src="images/photos/thumb_01.jpg" alt="one" style="width:150px;height:150px;">
-					</div>
-					<div class="fs-cell fs-sm-3 fs-md-3 fs-lg-3 fs-xl-3">
-						<img class="photos" src="images/photos/thumb_01.jpg" alt="one" style="width:150px;height:150px;">
-					</div>
+				<div class="fs-cell fs-xs-half fs-sm-third fs-md-1 fs-lg-2 fs-xl-2 gallery_md_top">
+					<a href="images/photos/02.jpg">
+					<img class="photos" src="images/photos/thumb_02.jpg" alt="waterfall"></a>
 				</div>
-
-
-
-
-
-<!--	this is what I had to start for the above			
-
-				<div class="fs-cell fs-sm-3 fs-md-4 fs-lg-8 fs-xl-8">
-					<img class="photos" src="images/photos/thumb_01.jpg" alt="one" style="width:150px;height:150px;">	
-					<img class="photos" src="images/photos/thumb_02.jpg" alt="two" style="width:150px;height:150px;">
-					<img class="photos" src="images/photos/thumb_03.jpg" alt="three" style="width:150px;height:150px;">
-					<img class="photos" src="images/photos/thumb_04.jpg" alt="four" style="width:150px;height:150px;">
-					<img class="photos" src="images/photos/thumb_05.jpg" alt="five" style="width:150px;height:150px;">
-					<img class="photos" src="images/photos/thumb_06.jpg" alt="six" style="width:150px;height:150px;">
-					<img class="photos" src="images/photos/thumb_07.jpg" alt="seven" style="width:150px;height:150px;">
-					<img class="photos" src="images/photos/thumb_08.jpg" alt="eight" style="width:150px;height:150px;">
+				<div class="fs-cell fs-xs-half fs-sm-third fs-md-1 fs-lg-2 fs-xl-2">
+					<a href="images/photos/03.jpg">
+					<img class="photos" src="images/photos/thumb_03.jpg" alt="biker"></a>
 				</div>
--->
-
+				<div class="fs-cell fs-sm-half fs-md-1 fs-lg-2 fs-xl-2">
+					<a href="images/photos/04.jpg">
+					<img class="photos" src="images/photos/thumb_04.jpg" alt="beach"></a>
+				</div>
+				<div class="fs-cell fs-sm-half fs-md-1 fs-lg-2 fs-xl-2">
+					<a href="images/photos/05.jpg">
+					<img class="photos" src="images/photos/thumb_05.jpg" alt="veggies"></a>
+				</div>
+				<div class="fs-cell fs-sm-half fs-md-1 fs-lg-2 fs-xl-2">
+					<a href="images/photos/06.jpg">
+					<img class="photos" src="images/photos/thumb_06.jpg" alt="fire"></a>
+				</div>
+				<div class="fs-cell fs-sm-half fs-md-1 fs-lg-2 fs-xl-2">
+					<a href="images/photos/07.jpg">
+					<img class="photos" src="images/photos/thumb_07.jpg" alt="park"></a>
+				</div>
+				<div class="fs-cell fs-sm-half fs-md-1 fs-lg-2 fs-xl-2">
+					<a href="images/photos/08.jpg">
+					<img class="photos" src="images/photos/thumb_08.jpg" alt="hand"></a>
+				</div>
 			</div>
 		</section>
 
-		<section class="downloadStrip">
+		<section class="bar downloadStrip">
 			<div class="fs-row">
-				<div class="fs-cell-centered fs-sm-3 fs-md-4 fs-lg-8 fs-xl-8">
+				<div class="fs-cell-centered fs-sm-3 fs-md-4 fs-lg-8 fs-xl-8 downbut">
 					<h2>Download Now</h2>
 					<p>Nullam id dolor id nibh ultricies vehicula deposit quid pro quo hic escorol.</p>
-					<a href="#" class="download_button icon-apple">apple store</a>
-					<a href="#" class="download_button icon-google">google store</a>
-					<a href="#" class="download_button icon-amazon">amazon store</a>
+					<a href="#" class="download_button icon-apple" alt="Apple Store">apple store</a>
+					<a href="#" class="download_button icon-google" alt="Google Store">google store</a>
+					<a href="#" class="download_button icon-amazon" alt="Amazon Store">amazon store</a>
 				</div>
 			</div>
 		</section>
 
-		<hr class="fs-cell fs-sm-3 fs-md-6 fs-lg-12 fs-xl-12">
+		<footer class=" bar footerStrip">
+			<div class="fs-row line">
 
-		<footer class="footerStrip disclosureText">
-			<div class="fs-row">
-				<div class="fs-cell">
-					<p class="left">Support</p>
-					<p class="left">Privacy &amp; Terms</p>
-					<p class="left copyText"> &copy; 2014 PicticiousPro</p>
+				<div class="fs-cell-right fs-sm-3 fs-md-half fs-lg-half fs-xl-half socbut">
+					<a href="#" class="social_button icon_facebook" alt="Facebook">facebook</a>
+					<a href="#" class="social_button icon_twitter" alt="Twitter">twitter</a>
+					<a href="#" class="social_button icon_googleplus" alt="Google+">googleplus</a>
+				</div>				
+
+				<div class="fs-cell-left fs-sm-3 fs-md-half fs-lg-half fs-xl-half">
+					<p class="disclosureText copyText"> 
+						<a href="#" class="disclosureText">Support</a>
+						<a href="#" class="disclosureText">Privacy &amp; Terms</a>
+						&copy; 2014 PicticiousPro</p>
 				</div>
-				<div>
-					<a href="#" class="social_button icon-facebook right">facebook</a>
-					<a href="#" class="social_button icon-twitter right">twitter</a>
-					<a href="#" class="social_button icon-googleplus right">googleplus</a>
-				</div>
+
 			</div>
 		</footer>
 

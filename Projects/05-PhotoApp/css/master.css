@@ -1,45 +1,77 @@
-	html,
-	body {
-		font-family: 'Roboto', Helvetica, sans-serif;
-	}
+html,
+body {
+	font-family: 'Roboto', Helvetica, sans-serif;
+	color: #777;
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-family: 'Roboto Condensed', Helvetica, sans-serif;
-		font-weight: 300;
-	}
-	h1 {
-		font-size: 70px;
-		color: #fff;
-		text-transform: uppercase;
-	}
-	h2 {
-		font-size: 42px;
-		color: #e77e04;
-	}
-	h3 {
-		font-size: 36px;
-		color: #2b3f4c;
-	}
-	h4 {
-		font-size: 26px;
-		color: #e77e04;
-		text-transform: uppercase;
-	}
+}
 
-	.left {
-		float: left;
-		padding: 10px;
-	}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	font-weight: 300;
+}
+h1 {
+	font-size: 70px;
+	color: #fff;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 42px;
+	color: #e77e04;
+}
+h3 {
+	font-size: 36px;
+	color: #2b3f4c;
+}
+h4 {
+	font-size: 26px;
+	color: #e77e04;
+	text-transform: uppercase;
+}
 
-	.right {
-		float: right;
-		padding: 0px 10px;
-	}
+/* mouse over link */
+a:hover {
+    color: #e77e04;
+}
+
+a {
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+/* Floats*/
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* Bars */
+
+.bar {
+	background: #fff;
+	clear: both;
+	width: 100%;
+}
+
+/* Clears */
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+	
 
 /*sprites
 	.icon-logo, .icon-facebook, .icon-twitter, .icon-google, 
@@ -50,127 +82,145 @@
 
 	}*/
 
-	.icon-logo:before{
-		background: url('../images/icon_sprite.png');
-		content: '';
-		display: inline-block;
-		height: 65px;
-		width:65px;
-		vertical-align: middle;
-	}
-
-/*logo text*/
-	.logo {font-size: 30px;
-		color: #2b3f4c;
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-
-/* this is to make text white and font size20 pixels*/
-	.heroText{
-		color: #fff;
-		font-size: 20px;
-		line-height: 200%;
-	}
-
-/* This is the hero image section */
-	.hero {
-		background: #e77e04 center no-repeat;
-		background-image: url("../images/intro_bg.jpg");
-		background-size: cover;
-		padding: 75px 0;
-	}
-/*this is the 'download now' button in the hero section*/
-	.download {
-		font-size: 20px;
-		color: #e77e04;
-		padding: 10px 30px;
-		border-radius: 5px;
-		background-color: #fff;
-		border-color: #fff;
-		text-transform: uppercase;
-	}
-
-/*code for three options boxes*/
-	.options {
-		padding: 100px 20px 100px 20px;
-		text-align: center;
-		line-height: 150%;
-	}
-
-	.options h4:before {
-		background: url('../images/icon_sprite.png');
-		content: '';
-		display: block;	
-	}
-
-	.icon-tagBig h4:before {
-		background-position: 0 -120px;
-		height: 70px; 
-		width:70px;
-		margin: 0 auto 20px;
-	}
-
-	.icon-cloudBig h4:before {
-		background-position: -80px -120px;
-		height: 70px; 
-		width:74px;
-		margin: 0 auto 20px;
-	}
-
-	.icon-mapBig h4:before {
-		background-position: -160px -120px;
-		height: 70px; 
-		width:50px;
-		margin: 0 auto 20px;
-	}
-
-
-
-
-/* This is the gray color strip */
-	.gallerystrip {
-		background: #eee center no-repeat;
-		background-size: cover;
-		padding: 75px 0;
-	
-	}
-
-.gallery {
-	
+/* Header section*/
+.headerstrip {
+	position: relative;
 }
+
+/*logo icon in header*/
+.icon-logo:before{
+	background: url('../images/icon_sprite.png');
+	content: '';
+	display: inline-block;
+	height: 65px;
+	width:65px;
+	vertical-align: middle;
+}
+
+/*logo text in header*/
+.logo {font-size: 30px;
+	color: #2b3f4c;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* this is to make text white and font size20 pixels in the hero section*/
+.heroText{
+	color: #fff;
+	font-size: 20px;
+	line-height: 200%;
+}
+
+/* This is the hero image background section */
+
+.herostrip {
+	background: #e77e04 center no-repeat;
+	background-image: url("../images/intro_bg.jpg");
+	background-size: cover;
+	padding: 50px 0;
+	position: relative;
+}
+.phone {
+	position: absolute;
+	bottom:0px;
+	right: 200px;
+}
+
+@media screen and (min-width: 480px) {
+	.sm_phone_hide {
+
+	}
+}
+
+
+/*this is the 'download now' button in the hero section*/
+.hero_button {
+	font-size: 20px;
+	color: #e77e04;
+	padding: 10px 30px;
+	border-radius: 5px;
+	background-color: #fff;
+	border-color: #fff;
+	text-transform: uppercase;
+}
+
+
+	
+
+/*code for three options/features boxes and their icons*/
+.options {
+	padding: 100px 20px 100px 20px;
+	text-align: center;
+	line-height: 150%;
+}
+
+.options h4:before {
+	background: url('../images/icon_sprite.png');
+	content: '';
+	display: block;	
+}
+
+.icon-tagBig h4:before {
+	background-position: 0 -120px;
+	height: 70px; 
+	width:70px;
+	margin: 0 auto 20px;
+}
+
+.icon-cloudBig h4:before {
+	background-position: -80px -120px;
+	height: 70px; 
+	width:74px;
+	margin: 0 auto 20px;
+}
+
+.icon-mapBig h4:before {
+	background-position: -160px -120px;
+	height: 70px; 
+	width:50px;
+	margin: 0 auto 20px;
+}
+
+
+
+
+/* This is the gray color strip for the photo section */
+.gallerystrip {
+	background: #eee center no-repeat;
+	background-size: cover;
+	padding: 75px 0;
+
+}
+
+.galleryText {
+	line-height: 200%;
+}
+ 
+.photos:after {
+  box-sizing: inherit;
+}
+
+@media screen and (min-width: 740px) and (max-width: 979px) {
+	.gallery_md_top {
+		margin-top: 120px;
+	}
+}
+
 
 .photos {
-	padding: 5px;
+	width: 100%;
 }
 
-hr {
-	color: #eee;
-	border-right-width: 1px;
-}
 
-/* This is the footer*/
-	.footerStrip {
-		height: 200px;
-	}
-
-/* text in footer*/
-.disclosureText {
-	font-size: 16px;
-	color: #2b3f4c;
-}
-
-/* copyright text in footer*/
-.copyText {
-	color: #777
-}
 
 /* This is the download now section color strip */
-	.downloadStrip {
-		height: 300px;
-		text-align: center;
-	}
+.downloadStrip {
+	height: 300px;
+	text-align: center;
+}
 
+
+/* This is for the download buttons */
 .download_button {
 	background: black url(../images/icon_sprite.png) no-repeat;
 	display: inline-block;
@@ -180,7 +230,6 @@ hr {
 	text-indent: 200%;
 	white-space: nowrap;
 	border-radius: 5px;
-
 }
 
 .icon-apple {
@@ -195,36 +244,59 @@ hr {
 	background-position: center -320px;	
 }
 
+/* This is the footer*/
+.footerStrip {
+	height: 200px;
+	overflow: auto;
+}
+
+/* text in footer*/
+.disclosureText {
+	font-size: 16px;
+	color: #2b3f4c;
+	display: inline-block;
+	padding: 0px 15px;
+}
+
+
+/* copyright text in footer*/
+.copyText {
+	color: #777
+}
+
+/* This is for the social media icons in the footer*/
 .social_button {
 	background: black url(../images/icon_sprite.png) no-repeat;
 	display: inline-block;
 	height: 40px;
 	width: 40px;
-	overflow: hidden;
+	overflow: auto;
 	text-indent: 200%;
 	white-space: nowrap;
 	border-radius: 5px;
+	margin: 7px;
 }
 
-.icon-facebook {
+.socbut{
+	text-align: right;
+}
+
+.icon_facebook {
 	background-position: -80px 0; 
 }
 
-.icon-twitter {
+.icon_twitter {
 	background-position: -120px 0;
 }
 
-.icon-googleplus {
+.icon_googleplus {
 	background-position: -160px 0;
 }
 
-
-
-
-.intro-phone:before {
-
-}
-
+.line {
+	border-top: solid;
+    border-width: 2px;
+	    }
 
 
 
