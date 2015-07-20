@@ -1,6 +1,6 @@
 html,
 body {
-	font-family: 'Roboto', Helvetica, sans-serif;
+	font-family: 'Roboto Light', Helvetica, sans-serif;
 	color: #777;
 
 }
@@ -11,14 +11,28 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	font-family: 'Roboto Condensed Light', Helvetica, sans-serif;
 	font-weight: 300;
 }
+
+
 h1 {
-	font-size: 70px;
 	color: #fff;
 	text-transform: uppercase;
 }
+
+@media all and (max-width: 739px) {
+	h1 {
+		font-size: 50px;
+	}
+}
+
+@media all and (min-width: 740px) {
+	h1 {
+		font-size: 70px;
+	}
+}
+
 h2 {
 	font-size: 42px;
 	color: #e77e04;
@@ -120,18 +134,32 @@ a {
 	padding: 50px 0;
 	position: relative;
 }
-.phone {
-	position: absolute;
-	bottom:0px;
-	right: 200px;
-}
 
-@media screen and (min-width: 480px) {
-	.sm_phone_hide {
 
+/* media queries dor the phone image*/
+@media screen and (max-width: 739px) {
+	
+	.phone_sm {
+		display: none;
 	}
 }
 
+
+@media screen and (min-width: 740px) and (max-width: 979px) {
+	.phone_md {
+		position: absolute;
+		bottom:0px;
+		right: -21px;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.phone_lg {
+		position: absolute;
+		bottom:0px;
+		right: 120px;
+	}
+}
 
 /*this is the 'download now' button in the hero section*/
 .hero_button {
@@ -145,40 +173,78 @@ a {
 }
 
 
-	
 
 /*code for three options/features boxes and their icons*/
-.options {
-	padding: 100px 20px 100px 20px;
-	text-align: center;
-	line-height: 150%;
+
+@media screen and (max-width: 739px) {
+	.optionsSmall {
+		padding: 10px 10px 0px 10px;
+		text-align: left;
+		line-height: 150%;
+		vertical-align: middle;
+	}
+
+	.options h4:after {
+		background: url('../images/icon_sprite.png');
+		content: '';
+		display: inline-block;	
+	}
+
+	.icon-tagSmall h4:after {
+		background-position: 0 -80px;
+		height: 32px; 
+		width:30px;
+		margin: 0px 20px;
+	}
+
+	.icon-cloudSmall h4:after {
+		background-position: -40px -80px;
+		height: 28px; 
+		width:37px;
+		margin: 0px 20px;
+	}
+
+	.icon-mapSmall h4:after {
+		background-position: -80px -80px;
+		height: 33px; 
+		width:30px;
+		margin: 0px 20px;
+	}
 }
 
-.options h4:before {
-	background: url('../images/icon_sprite.png');
-	content: '';
-	display: block;	
-}
+@media screen and (min-width: 740px) {
+	.options {
+		padding: 60px 20px 60px 20px;
+		text-align: center;
+		line-height: 150%;
+	}
 
-.icon-tagBig h4:before {
-	background-position: 0 -120px;
-	height: 70px; 
-	width:70px;
-	margin: 0 auto 20px;
-}
+	.options h4:before {
+		background: url('../images/icon_sprite.png');
+		content: '';
+		display: block;	
+	}
 
-.icon-cloudBig h4:before {
-	background-position: -80px -120px;
-	height: 70px; 
-	width:74px;
-	margin: 0 auto 20px;
-}
+	.icon-tagBig h4:before {
+		background-position: 0 -120px;
+		height: 70px; 
+		width:70px;
+		margin: 0 auto 20px;
+	}
 
-.icon-mapBig h4:before {
-	background-position: -160px -120px;
-	height: 70px; 
-	width:50px;
-	margin: 0 auto 20px;
+	.icon-cloudBig h4:before {
+		background-position: -80px -120px;
+		height: 70px; 
+		width:74px;
+		margin: 0 auto 20px;
+	}
+
+	.icon-mapBig h4:before {
+		background-position: -160px -120px;
+		height: 70px; 
+		width:50px;
+		margin: 0 auto 20px;
+	}
 }
 
 
@@ -189,7 +255,12 @@ a {
 	background: #eee center no-repeat;
 	background-size: cover;
 	padding: 75px 0;
+}
 
+@media screen  and (max-width: 979px) {
+	.gallerystripMed {
+		padding: 25px 0 50px;
+	}
 }
 
 .galleryText {
@@ -214,22 +285,63 @@ a {
 
 
 /* This is the download now section color strip */
-.downloadStrip {
-	height: 300px;
-	text-align: center;
+
+@media all and (max-width: 739px) {
+	.downloadStrip {
+		height: 400px;
+		text-align: left;
+	}
+}
+@media all and (min-width: 740px) {
+	.downloadStrip {
+		height: 255px;
+		text-align: center;
+	}
 }
 
 
 /* This is for the download buttons */
-.download_button {
-	background: black url(../images/icon_sprite.png) no-repeat;
+
+@media all and (max-width: 499px) {
+	.download_button {
+		background: black url(../images/icon_sprite.png) no-repeat;
+		display: inline-block;
+		height: 60px;
+		width: 295px;
+		overflow: hidden;
+		text-indent: 200%;
+		white-space: nowrap;
+		border-radius: 5px;
+		margin: 5px 0px 5px 0px;
+	}
+}
+
+@media all and (min-width: 500px) and (max-width: 739px) {
+	.download_button {
+		background: black url(../images/icon_sprite.png) no-repeat;
+		display: inline-block;
+		height: 60px;
+		width: 465px;
+		overflow: hidden;
+		text-indent: 200%;
+		white-space: nowrap;
+		border-radius: 5px;
+		margin: 5px 0px 5px 0px;
+	}
+}
+
+@media all and (min-width: 740px) {
+  .download_button {
+  	background: black url(../images/icon_sprite.png) no-repeat;
 	display: inline-block;
 	height: 60px;
 	width: 200px;
 	overflow: hidden;
 	text-indent: 200%;
 	white-space: nowrap;
-	border-radius: 5px;
+	border-radius: 5px;	
+
+  }
 }
 
 .icon-apple {
@@ -255,7 +367,19 @@ a {
 	font-size: 16px;
 	color: #2b3f4c;
 	display: inline-block;
-	padding: 0px 15px;
+	padding: 0px 10px 0px 0px;
+
+}
+
+@media screen and (max-width: 739px) {
+	.disclosureText {
+		text-align: center;
+	}
+}
+@media screen and (min-width: 740px) {
+	.disclosureText {
+		text-align: left;
+	}
 }
 
 
@@ -277,9 +401,18 @@ a {
 	margin: 7px;
 }
 
-.socbut{
-	text-align: right;
+@media screen and (max-width: 739px) {
+	.socialbut{
+		text-align: center;
+		padding: 15px 0px 15px 0px;
+	}
 }
+@media screen and (min-width: 740px) {
+	.socialbut{
+		text-align: right;
+	}
+}
+
 
 .icon_facebook {
 	background-position: -80px 0; 

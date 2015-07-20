@@ -10,7 +10,7 @@
 
 	<title>PicticiousPro</title>
 
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Condensed:300italic,400italic,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400,700,400italic,700italic|Roboto+Condensed:300italic,400italic,400,700' rel='stylesheet' type='text/css'>
 
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/grid.css" rel="stylesheet">
@@ -27,37 +27,39 @@
 			</div>	
 		</header>
 
-		<section class="bar herostrip sm_phone_hide">
+		<section class="bar herostrip offscreen">
 			<div class="fs-row">
 				<div class="fs-cell fs-sm-3 fs-md-4 fs-lg-6 fs-xl-6">
 					<h1>Nice Shot</h1>
 					<p class="heroText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-					<button type="button" class="hero_button">Download Now</button>
+					<button type="button" class="hero_button ">Download Now</button>
 				</div>
-				<div class="fs-cell fs-md-2 fs-lg-6 fs-xl-6">
-					<img class="phone" src="images/intro_phone.png" alt="Phone">
+				
+				<div class="fs-cell fs-md-2 fs-lg-6 fs-xl-6 offscreen">
+					<img class="phone_lg phone_md phone_sm" src="images/intro_phone.png" alt="Phone">
 				</div>
+
 			</div>
 		</section>
 
 		<section class="bar fs-row">
-			<article class="options icon-tagBig fs-cell fs-sm-3 fs-md-2 fs-lg-4 fs-xl-4">
+			<article class="options optionsSmall icon-tagBig icon-tagSmall fs-cell fs-sm-3 fs-md-2 fs-lg-4 fs-xl-4">
 				<h4>Tag It All</h4>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit aliquet felis, quis.
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit aliquet felis, quis.</p>
 			</article>
 
-			<article class="options icon-cloudBig fs-cell fs-sm-3 fs-md-2 fs-lg-4 fs-xl-4">
+			<article class="options icon-cloudBig icon-cloudSmall fs-cell fs-sm-3 fs-md-2 fs-lg-4 fs-xl-4">
 				<h4>Cloud Sync</h4>
-				Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+				<p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.</p>
 			</article>
 
-			<article class="options icon-mapBig fs-cell fs-sm-3 fs-md-2 fs-lg-4 fs-xl-4">
+			<article class="options icon-mapBig icon-mapSmall fs-cell fs-sm-3 fs-md-2 fs-lg-4 fs-xl-4">
 				<h4>Photo Map</h4>
-				Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Ligula porta felis.
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Ligula porta felis.</p>
 			</article>
 		</section>
 
-		<section class="bar gallerystrip">
+		<section class="bar gallerystrip gallerystripMed">
 			<div class="fs-row">
 				<div class="fs-cell fs-sm-3 fs-md-4 fs-lg-4 fs-xl-4">
 					<h3>Capture Life</h3>
@@ -65,15 +67,15 @@
 					</p>
 				</div>
 			 	
-				<div class="fs-cell fs-xs-half fs-sm-third fs-md-1 fs-lg-2 fs-xl-2 gallery_md_top">
+				<div class="fs-cell fs-xs-half fs-sm-half fs-md-1 fs-lg-2 fs-xl-2 gallery_md_top">
 					<a href="images/photos/01.jpg">
 					<img class="photos" src="images/photos/thumb_01.jpg" alt="sunset"></a>
 				</div>
-				<div class="fs-cell fs-xs-half fs-sm-third fs-md-1 fs-lg-2 fs-xl-2 gallery_md_top">
+				<div class="fs-cell fs-xs-half fs-sm-half fs-md-1 fs-lg-2 fs-xl-2 gallery_md_top">
 					<a href="images/photos/02.jpg">
 					<img class="photos" src="images/photos/thumb_02.jpg" alt="waterfall"></a>
 				</div>
-				<div class="fs-cell fs-xs-half fs-sm-third fs-md-1 fs-lg-2 fs-xl-2">
+				<div class="fs-cell fs-xs-half fs-sm-half fs-md-1 fs-lg-2 fs-xl-2">
 					<a href="images/photos/03.jpg">
 					<img class="photos" src="images/photos/thumb_03.jpg" alt="biker"></a>
 				</div>
@@ -102,7 +104,7 @@
 
 		<section class="bar downloadStrip">
 			<div class="fs-row">
-				<div class="fs-cell-centered fs-sm-3 fs-md-4 fs-lg-8 fs-xl-8 downbut">
+				<div class="fs-cell-centered fs-sm-3 fs-md-6 fs-lg-8 fs-xl-8 downbut">
 					<h2>Download Now</h2>
 					<p>Nullam id dolor id nibh ultricies vehicula deposit quid pro quo hic escorol.</p>
 					<a href="#" class="download_button icon-apple" alt="Apple Store">apple store</a>
@@ -115,15 +117,14 @@
 		<footer class=" bar footerStrip">
 			<div class="fs-row line">
 
-				<div class="fs-cell-right fs-sm-3 fs-md-half fs-lg-half fs-xl-half socbut">
+				<div class="fs-cell-right fs-sm-3 fs-md-2 fs-lg-half fs-xl-half socialbut">
 					<a href="#" class="social_button icon_facebook" alt="Facebook">facebook</a>
 					<a href="#" class="social_button icon_twitter" alt="Twitter">twitter</a>
 					<a href="#" class="social_button icon_googleplus" alt="Google+">googleplus</a>
 				</div>				
 
-				<div class="fs-cell-left fs-sm-3 fs-md-half fs-lg-half fs-xl-half">
-					<p class="disclosureText copyText"> 
-						<a href="#" class="disclosureText">Support</a>
+				<div class="fs-cell-left fs-sm-3 fs-md-4 fs-lg-half fs-xl-half disclosureText copyText"> 
+						<p><a href="#" class="disclosureText">Support</a>
 						<a href="#" class="disclosureText">Privacy &amp; Terms</a>
 						&copy; 2014 PicticiousPro</p>
 				</div>
