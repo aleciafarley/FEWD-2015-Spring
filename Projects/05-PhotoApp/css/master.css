@@ -278,8 +278,12 @@ a {
 }
 
 
-.photos {
+.photos .fs-carousel-enabled img {
 	width: 100%;
+}
+
+.fs-carousel-enabled a {
+	margin: 0 10px 0 0;
 }
 
 
