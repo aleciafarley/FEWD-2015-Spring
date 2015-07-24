@@ -371,18 +371,18 @@ a {
 	font-size: 16px;
 	color: #2b3f4c;
 	display: inline-block;
-	padding: 0px 10px 0px 0px;
-
 }
 
 @media screen and (max-width: 739px) {
 	.disclosureText {
 		text-align: center;
+		padding: 0px 10px 0px 10px;
 	}
 }
 @media screen and (min-width: 740px) {
 	.disclosureText {
 		text-align: left;
+		padding: 0px 10px 0px 10px;
 	}
 }
 
@@ -417,6 +417,12 @@ a {
 	}
 }
 
+@media screen and (max-width: 739px) {
+	.copyright{
+		display: block;
+		padding: 15px;
+	}
+}
 
 .icon_facebook {
 	background-position: -80px 0; 

@@ -5,5 +5,7 @@ $(document).ready(function() {
 			"740px": 3
 		}
 	});
+
+	$(".js-lightbox").lightbox();
 		
 })
