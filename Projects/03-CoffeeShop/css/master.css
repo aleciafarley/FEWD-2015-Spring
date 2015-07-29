@@ -41,12 +41,12 @@ html,
 		display: inline-block;
 		width:40%;
 	}
-
+/*
 	header {
 		background-color: #222;
 		background-image: url("images/header.jpg");
 	}
-
+*/
 	.list_One {
 		padding: 20px;
 		border-bottom: solid 2px #9B761C;
@@ -168,7 +168,7 @@ html,
 		background-image: url("../images/header.jpg");
 		background-size: cover;
 		padding: 75px 0;
-		text-align: center;
+
 	}
 
 
